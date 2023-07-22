@@ -7,11 +7,10 @@ public class LocomotionSimpleAgent : MonoBehaviour {
 	UnityEngine.AI.NavMeshAgent agent;
 	Vector2 smoothDeltaPosition = Vector2.zero;
 	Vector2 velocity = Vector2.zero;
-
-	void Start () {
+	
+    void Start () {
 		anim = GetComponent<Animator> ();
-		agent = GetComponent<UnityEngine.AI.NavMeshAgent> ();
-		agent.updatePosition = false;
+		agent = GetComponent<UnityEngine.AI.NavMeshAgent> ();		
 	}
 	
 	void Update () {
@@ -33,9 +32,9 @@ public class LocomotionSimpleAgent : MonoBehaviour {
 		bool shouldMove = velocity.magnitude > 0.5f && agent.remainingDistance > agent.radius;
 
 		// Update animation parameters
-		anim.SetBool("move", shouldMove);
+		/*anim.SetBool("move", shouldMove);
 		anim.SetFloat ("velx", velocity.x);
-		anim.SetFloat ("vely", velocity.y);
+		anim.SetFloat ("vely", velocity.y);*/
 
 		LookAt lookAt = GetComponent<LookAt> ();
 		if (lookAt)

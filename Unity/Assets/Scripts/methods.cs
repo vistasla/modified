@@ -66,3 +66,7 @@ position.x = position.x + (double)(0.1f * horizontal);*/
 
 )*/
 /*Object[] myObjArray = new Object[5] { 26, 27, 28, 29, 30 };*/
+/*GUI.Label(new Rect(0, 0, 200, 20), "Clip Name : " + anim.GetCurrentAnimatorClipInfo(0)[0].clip.name);
+ GUI.Label(new Rect(0, 30, 200, 20), "Clip Length : " + anim.GetCurrentAnimatorClipInfo(0)[0].clip.length);*/
+/*GUI.color = new Color(Random.value, Random.value, Random.value);
+ GUI.color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f),Random.Range(0.0f, 1.0f),Random.Range(0.0f, 1.0f)) ;*/
